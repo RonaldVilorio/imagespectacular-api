@@ -6,6 +6,7 @@ class CreateImages < ActiveRecord::Migration[5.2]
       t.integer :likes
       t.string :owner
       t.string :description
+      t.string :title
       t.timestamps
     end
   end
