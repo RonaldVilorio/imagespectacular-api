@@ -4,7 +4,9 @@ class ImagesController < ApplicationController
         render :json => @images
     end
     def create
+        print params
         @image = Image.new(image_params)
+        # use gem to process image here
         if @image.save
             render :json => @image
         else
